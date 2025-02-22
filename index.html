@@ -1,0 +1,72 @@
+<style>
+    body {
+        background-color: red;
+    }
+
+    .container {
+        background-color: white;
+        width: 30%;
+        border: 20;
+        margin: auto;
+        padding: 1% 2%;
+        border-radius: 20px;
+    }
+
+    .form-field input,
+    .form-field select {
+        width: 90%;
+        padding: 10px;
+    }
+    button{
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 45%;
+        border-radius: 10px;
+        font-size: 1.3rem;
+    }
+     @media(max-width:436px){
+        .container{
+            width: 90%;
+        }
+        
+    }
+</style>
+</head>
+
+<body>
+<form class="container" action="./login.html">
+
+    <h1 class="title">register</h1>
+    <p class="form-field">
+        <input type="text" placeholder="enter your name" required />
+    </p>
+    <p class="form-field">
+        <input type="email" placeholder="enter email id" required />
+    </p>
+    <p class="form-field">
+        <input type="password" placeholder="enter password" required />
+    </p>
+    <p class="foem-radio">
+        <input type="radio" name="gender" required /> male
+        <input type="radio" name="gender" required /> female
+        <input type="radio" name="gender" />others
+    </p>
+    <p class="foem-field">
+        <input type="date" placeholder="enter your date" required />
+    </p>
+    <p class="foem-field">
+        <select required>
+            <option value="">select your state</option>
+            <option value="">ap</option>
+            <option value="">ts</option>
+            <option value="">br</option>
+            <option value="">hm</option>
+        </select>
+    </p>
+    <p class="foem-field">
+        <input type="file" required>
+    </p>
+    <button>submit</button>
+</form>
